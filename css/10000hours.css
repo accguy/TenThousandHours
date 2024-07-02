@@ -1,29 +1,346 @@
 @font-face {
-    font-family: 'OTEnjoystoriesBA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 400;
-    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+      format("woff"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+      format("opentype");
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  font-size: 1.5rem;
+  background: #5b2386;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+header {
+  width: 100%;
+}
+header div.title {
+  position: relative;
+  width: 700px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/clock.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header img {
+  width: 564px;
+  aspect-ratio: 564/112;
+  max-width: 564px;
+}
+@media (max-width: 360px) {
+  header div.title {
+    width: 300px;
+    height: 120px;
+    background-size: 125px;
+    /* background-color: aqua; */
+    margin-top: 40px;
+  }
+  header img {
+    width: 267px;
+    aspect-ratio: 564/112;
+    /* object-fit: contain; */
+    max-width: 564px;
+  }
+}
+/*  */
+main {
+  font-family: "GmarketSansMedium";
+  width: 100%;
+  position: relative;
+}
+
+main p.quote-text {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 36px;
+  color: #f5df4d;
+  text-align: center;
+  margin: 21px auto 78px;
+  display: block;
+  position: relative;
+}
+
+div.quote-container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  background-image: url("../img/quotes.png");
+  background-repeat: no-repeat;
+  background-position: 50% 13%;
+  margin-bottom: 102px;
+  /* background-color: aqua; */
+}
+
+@media screen and (max-width: 360px) {
+  div.quote-container {
+    background-size: 302px;
+    background-position: 50% 28%;
+    margin-bottom: 60px;
+  }
+}
+
+div.quote-container p.quote-paragraph {
+  line-height: 30px;
+  font-size: 18px;
+}
+p.quote-paragraph span {
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+}
+
+@media screen and (max-width: 360px) {
+  main p.quote-text {
+    font-size: 22px;
+  }
+  div.quote-container p.quote-paragraph {
+    line-height: 25px;
+    font-size: 14px;
+  }
+  p.quote-paragraph span {
+    font-size: 14px;
+  }
+}
+
+input {
+  font-size: 24px;
+  font-family: "GmarketSansMedium";
+  padding: 17px 0px;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+  margin: 0px 17px;
+}
+input::placeholder {
+  color: #babcbe;
+}
+@media screen and (max-width: 360px) {
+  input {
+    font-size: 14px;
+    padding: 12px 0px;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    margin: 0px 4px;
+  }
+  span.br {
+    display: block;
+  }
+  span.phone {
+    margin-bottom: 19px;
+  }
+}
+
+.first-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.expert-sentence {
+  margin-bottom: 27px;
+  text-align: center;
+}
+.train-hour-sentence {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+@media screen and (max-width: 360px) {
+  .train-hour-sentence {
+    margin-bottom: 49px;
+  }
+}
+
+.btn {
+  background-color: #fcee21;
+  border-radius: 56px;
+  font-family: "GmarketSansBold";
+  font-size: 1.5rem;
+  color: #5b2386;
+  padding: 21px 49px;
+  border: none;
+  margin: 30px auto;
+}
+/*  */
+@media screen and (max-width: 360px) {
+  .btn-calculation {
+    border-radius: 13px;
+    padding: 19px 36.5px;
+    width: 241px;
+    margin: 30px auto;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 13.5px;
+    margin: 0px;
+  }
+}
+
+/* 나는 며칠 동안 훈련을 해야 1만 시간이 될까? 버튼*/
+.btn-section {
+  margin: auto;
+  position: relative;
+  width: 600px;
+}
+.btn-section img.click {
+  position: absolute;
+  top: 55px;
+}
+/* 나는 며칠 동안 훈련을 해야 1만 시간이 될까? (mobile) */
+@media screen and (max-width: 360px) {
+  .btn-section {
+    width: fit-content;
+  }
+  img.click {
+    position: absolute;
+    width: 43px;
+  }
+}
+
+/*  */
+@media screen and (max-width: 360px) {
+  .btn-calculation {
+    border-radius: 13px;
+    padding: 19px 36.5px;
+    border: none;
+    margin: 30px auto;
+    width: 241px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 13.5px;
+    margin: 0px;
+  }
+}
+
+/*  */
+.sentences {
+  margin-top: 147px;
+}
+.expert-sentence strong,
+.train-hour-sentence strong {
+  font-size: 72px;
+  vertical-align: middle;
+  margin: 0px 12px;
+  font-family: "GmarketSansBold";
+}
+@media screen and (max-width: 360px) {
+  .sentences {
+    margin-top: 64px;
+  }
+  .expert-sentence strong,
+  .train-hour-sentence strong {
+    font-family: "GmarketSansBold";
+    font-size: 24px;
+    vertical-align: middle;
+    margin: 0px 8px;
+  }
+}
+/* clear-btn */
+.clear-btn-section {
+  /* background-color: #eee; */
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 127px;
+  margin-bottom: 130px;
+}
+
+@media screen and (max-width: 360px) {
+  .clear-btn-section {
+    /* background-color: #eee; */
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 55px;
+    margin-bottom: 83px;
+  }
+}
+
+/* footer */
+footer > img.logo {
+  display: block;
+  margin: 20px auto;
+}
+footer > p.copyright {
+  font-family: "Noto Sans KR";
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* footer(mobile) */
+@media screen and (max-width: 360px) {
+  footer > img.logo {
+    width: 91px;
+    margin: 17px auto;
+  }
+  footer > p.copyright {
+    font-size: 9px;
+    font-weight: 100;
+    margin-bottom: -400px;
+  }
+}
+@media screen and (max-width: 360px) {
+}
+
+.white-btn {
+  background-color: #fff;
 }
