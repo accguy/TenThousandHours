@@ -54,7 +54,7 @@ body {
   padding: 0;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   body {
     font-size: 14px;
   }
@@ -80,7 +80,7 @@ header img {
   aspect-ratio: 564/112;
   max-width: 564px;
 }
-@media (max-width: 360px) {
+@media (max-width: 720px) {
   header div.title {
     width: 300px;
     height: 120px;
@@ -94,6 +94,8 @@ header img {
     /* object-fit: contain; */
     max-width: 564px;
   }
+}
+@media (min-width: 300px) and (max-width: 853px) {
 }
 /*  */
 main {
@@ -125,7 +127,7 @@ div.quote-container {
   /* background-color: aqua; */
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   div.quote-container {
     background-size: 302px;
     background-position: 50% 28%;
@@ -142,7 +144,7 @@ p.quote-paragraph span {
   font-size: 24px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   main p.quote-text {
     font-size: 22px;
   }
@@ -168,7 +170,7 @@ input {
 input::placeholder {
   color: #babcbe;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   input {
     font-size: 14px;
     padding: 12px 0px;
@@ -201,7 +203,7 @@ input::placeholder {
   margin-bottom: 115px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   .train-hour-sentence {
     margin-bottom: 49px;
   }
@@ -218,7 +220,7 @@ input::placeholder {
   margin: 30px auto;
 }
 /*  */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   .btn-calculation {
     border-radius: 13px;
     padding: 19px 36.5px;
@@ -243,7 +245,7 @@ input::placeholder {
   top: 55px;
 }
 /* 나는 며칠 동안 훈련을 해야 1만 시간이 될까? (mobile) */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   .btn-section {
     width: fit-content;
   }
@@ -254,7 +256,7 @@ input::placeholder {
 }
 
 /*  */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   .btn-calculation {
     border-radius: 13px;
     padding: 19px 36.5px;
@@ -280,7 +282,7 @@ input::placeholder {
   margin: 0px 12px;
   font-family: "GmarketSansBold";
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   .sentences {
     margin-top: 64px;
   }
@@ -302,7 +304,7 @@ input::placeholder {
   margin-bottom: 130px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   .clear-btn-section {
     /* background-color: #eee; */
     display: flex;
@@ -327,7 +329,7 @@ footer > p.copyright {
   margin-bottom: 100px;
 }
 /* footer(mobile) */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   footer > img.logo {
     width: 91px;
     margin: 17px auto;
@@ -338,7 +340,7 @@ footer > p.copyright {
     margin-bottom: -400px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 720px) {
 }
 
 .white-btn {
